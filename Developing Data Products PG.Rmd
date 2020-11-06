@@ -1,0 +1,61 @@
+---
+title: "DataProducts"
+author: "RamyaChilakala"
+date: "06/11/2020"
+output:
+  html_document: default
+  word_document: default
+---
+---
+
+```{r}
+library(plotly)
+data(mtcars)
+head(mtcars,1)
+```
+the data given by the google information we have made the  explortaory graphs useful for the human beings which they can be made to analyse relationship between the variables like mileage gives verse weigth of data like the cylinders count used in total, gears count the given cylinder has, carbs count the cylinds have in total. The relationship between horse power and mileage or qsec and mileage can also be checked. Our desired graph can be made as our custmers wanted it by taking the options and needs required for it are also to be considered.
+In this the graph plated by me is between mileage(mpg) verses weight.
+```{r}
+plot_ly(mtcars) %>%
+    add_trace(x = ~mpg, y = ~cyl, type="scatter", mode = "markers",name = "cyinder count", legendgroup = "cyinder count", 
+              marker = list(color = "aliceblue")) %>%
+    add_trace(x = ~mpg, y = ~gear, type="scatter", mode = "markers",
+              name = "gears count", legendgroup = "gear count", 
+              marker = list(color = "yellow3")) %>%
+    add_trace(x = ~mpg, y = ~am, type="scatter", mode = "markers",
+              name = "am count", legendgroup = "am count", 
+              marker = list(color = "#AA4371")) %>%
+    add_trace(x = ~mpg, y = ~vs, type="scatter", mode = "markers",
+              name = "vs count", legendgroup = "vs count", 
+              marker = list(color = "#c00000")) %>%
+    add_trace(x = ~mpg, y = ~carb, type="scatter", mode = "markers",
+              name = "carbs count in total", legendgroup = "carb count in total", 
+              marker = list(color = "aquamarine1")) 
+```
+Scaterring plot is used above to acquire the required output.
+Different colors and its codes are used in my code above to distinguish the graph values easily and the understanding if the above graph is also easy because the colors mentioned are all different.
+The output of the above code gives us the count of the cylinders used, the count of the gears of the cylinders used,the count of the am of the cylinders,am count of the cylinders and the count of the carbs of the cylinders.
+From this assignment I have learnt how useful and easy scattering plot is and by using different colors distinguishing the categories is really easy.
+Internship on Business Analytics at Verzeo which is a Microsoft Authorized Education
+Partner. Have done a project “Predicting the cost of used cars from the given data”.
+• Completed my industrial training at AAI(Airport Authority of India) ,Hyderabad Airport
+and was well familiarized with their Communication, Navigation and Surveillance
+systems.
+• Worked on a project Automatic Smoke Detector Alarm using IC 555.
+• Worked on a project 8 Channel Quiz Buzzer Circuit using 8051 Microcontroller.
+• A project relating to Digital Signal Processing Butterfly Unit And FIR Filter Convolution
+• Worked as Joint-Sports Secretary for Student Council of MIT in the year 2018-2019.
+• Works as Co-Convener for Revels-2019 which is National Cultural and Sports Fest.
+• Worked in Organizing committee from Student Council for TechTatva-2019
+National Technical Fest.
+• Working as an Advisory board member for MIT Sports Club.
+• Worked for MIT Post for Techtatva-2018 as Social Media Partner.
+• Worked as Volunteer for Sports Category for Revels-2018.sx
+• Working as Manager for Team Samurais during MIT Cricket League season 4.
+• Working as Manager for Team Vipers during MIT Basket League season 3.
+• Working as Manager for Team Maverick during MIT Badminton League season 1.
+• Worked as Working Committee member for MIT Sports Club.
+• Management of events to be conducted can be smoothly done due to expertise as I
+was Prefect for my house from the academic years of 2013-2014.
+
+
